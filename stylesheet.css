@@ -105,7 +105,6 @@ header {
 
 #startBtn:hover {
     cursor: pointer;
-    background-color: none;
 }
 
 .img-container {
@@ -584,7 +583,7 @@ main {
 }
 
 .text-font {
-    font-family: hanyi, serif;
+    font-family: serif;
     font-size: 200%;
 }
 
