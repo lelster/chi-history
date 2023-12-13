@@ -18,12 +18,12 @@ function content_loader(){
         if (value === "true"){/*appapp*/
             changeThemeLight()
             if (document.getElementById("keyart-0")) {
-                document.getElementById("keyart-0").style.backgroundImage = "url('./img/background waves 3.png')";
+                document.getElementById("keyart-0").style.backgroundImage = "url('../img/background waves 3.png')";
             }
         } else {
             changeThemeDark()
             if (document.getElementById("keyart-0")) {
-                document.getElementById("keyart-0").style.backgroundImage = "url('./img/wavy background idaf prwr bl.png')";
+                document.getElementById("keyart-0").style.backgroundImage = "url('../img/wavy background idaf prwr bl.png')";
             }
         }
     }
@@ -243,11 +243,11 @@ function content_loader(){
             let value = localStorage.getItem("themeLight")
             if (value === "true") {
                 if (document.getElementById("keyart-0")) {
-                    document.getElementById("keyart-0").style.backgroundImage = "url('./img/background waves 3.png')";
+                    document.getElementById("keyart-0").style.backgroundImage = "url('../img/background waves 3.png')";
                 }
             } else {
                 if (document.getElementById("keyart-0")) {
-                    document.getElementById("keyart-0").style.backgroundImage = "url('./img/wavy background idaf prwr bl.png')";
+                    document.getElementById("keyart-0").style.backgroundImage = "url('../img/wavy background idaf prwr bl.png')";
                 }
             }
         });
@@ -583,7 +583,7 @@ function content_loader(){
             document.getElementById("beginningsImg3").src = '../img/idaf prwr wgcwzwm intro icon 4 bl.png';
         }
         if (document.getElementById("keyart-0")) {
-            document.getElementById("keyart-0").style.backgroundImage = "url('./img/background waves 3.png')";
+            document.getElementById("keyart-0").style.backgroundImage = "url('../img/background waves 3.png')";
         }
         document.querySelectorAll(".dropdown-darkTheme").forEach((i) => {
             i.classList.remove("dropdown-darkTheme");
@@ -630,7 +630,7 @@ function content_loader(){
             document.getElementById("beginningsImg3").src = '../img/idaf prwr wgcwzwm intro icon 4 wh.png';
         }
         if (document.getElementById("keyart-0")) {
-            document.getElementById("keyart-0").style.backgroundImage = "url('./img/wavy background idaf prwr bl.png')";
+            document.getElementById("keyart-0").style.backgroundImage = "url('../img/wavy background idaf prwr bl.png')";
         }
         document.querySelectorAll(".dropdown-lightTheme").forEach((i) => {
             i.classList.remove("dropdown-lightTheme")
