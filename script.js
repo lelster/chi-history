@@ -15,10 +15,16 @@ changer()
 function content_loader(){
     if (localStorage.getItem("themeLight") !== null) {
         let value = localStorage.getItem("themeLight")
-        if (value === "true"){
+        if (value === "true"){/*appapp*/
             changeThemeLight()
+            if (document.getElementById("keyart-0")) {
+                document.getElementById("keyart-0").style.backgroundImage = "url('./img/wavy background idaf prwr bl.png')";
+            }
         } else {
             changeThemeDark()
+            if (document.getElementById("keyart-0")) {
+                document.getElementById("keyart-0").style.backgroundImage = "url('./img/background waves 3.png')";
+            }
         }
     }
     document.getElementById("themeBtn-light").addEventListener("click", changeThemeLight);
@@ -229,11 +235,21 @@ function content_loader(){
             let i0ID = truther(".img-0")
             let i1ID = truther(".img-1")
             let i2ID = truther(".img-2")
-            let i3ID = truther(".img-3")
+            let i3ID = truther(".img-3")/*appapp*/
             /*console.log(i0ID)
             console.log(i1ID)*/
             stench()
             imgShower(scrollTop, i0ID, i1ID, i2ID, i3ID)
+            let value = localStorage.getItem("themeLight")
+            if (value === "true") {
+                if (document.getElementById("keyart-0")) {
+                    document.getElementById("keyart-0").style.backgroundImage = "url('./img/background waves 3.png')";
+                }
+            } else {
+                if (document.getElementById("keyart-0")) {
+                    document.getElementById("keyart-0").style.backgroundImage = "url('./img/wavy background idaf prwr bl.png')";
+                }
+            }
         });
     }
 
@@ -566,6 +582,9 @@ function content_loader(){
         if (document.getElementById("beginningsImg3")) {
             document.getElementById("beginningsImg3").src = '../img/idaf prwr wgcwzwm intro icon 4 bl.png';
         }
+        if (document.getElementById("keyart-0")) {
+            document.getElementById("keyart-0").style.backgroundImage = "url('./img/background waves 3.png')";
+        }
         document.querySelectorAll(".dropdown-darkTheme").forEach((i) => {
             i.classList.remove("dropdown-darkTheme");
             i.classList.add("dropdown-lightTheme");
@@ -609,6 +628,9 @@ function content_loader(){
         }
         if (document.getElementById("beginningsImg3")){
             document.getElementById("beginningsImg3").src = '../img/idaf prwr wgcwzwm intro icon 4 wh.png';
+        }
+        if (document.getElementById("keyart-0")) {
+            document.getElementById("keyart-0").style.backgroundImage = "url('./img/wavy background idaf prwr bl.png')";
         }
         document.querySelectorAll(".dropdown-lightTheme").forEach((i) => {
             i.classList.remove("dropdown-lightTheme")
