@@ -18,12 +18,12 @@ function content_loader(){
         if (value === "true"){/*appapp*/
             changeThemeLight()
             if (document.getElementById("keyart-0")) {
-                document.getElementById("keyart-0").style.backgroundImage = "url('./img/wavy background idaf prwr bl.png')";
+                document.getElementById("keyart-0").style.backgroundImage = "url('./img/background waves 3.png')";
             }
         } else {
             changeThemeDark()
             if (document.getElementById("keyart-0")) {
-                document.getElementById("keyart-0").style.backgroundImage = "url('./img/background waves 3.png')";
+                document.getElementById("keyart-0").style.backgroundImage = "url('./img/wavy background idaf prwr bl.png')";
             }
         }
     }
