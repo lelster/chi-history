@@ -309,7 +309,7 @@ header {
 .hamburgerMenu {
     display: none;
     flex: 1;
-    height: 125px;
+    max-height: 125px;
 }
 
 #menuLow {
@@ -393,12 +393,11 @@ header {
 main {
     min-height: 100vh;
     flex: 1;
-    border: solid red;
 }
 
 .title {
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .cred-between {
@@ -560,7 +559,7 @@ main {
 .content {
     display: flex;
     flex-direction: column;
-    margin: 0 30px 30px 30px;
+    margin: 70px 30px 30px 30px;
 }
 
 .introSeg {
@@ -584,11 +583,17 @@ main {
 
 .text-font {
     font-family: serif;
-    font-size: 200%;
+    font-size: 30px;
 }
 
 .textContainer {
     text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+.segmentFooter {
+    text-align: center;
 }
 
 .imgContentContainer {
