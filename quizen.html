@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang='de-CH'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz</title>
+  <script src="quiz.js"></script>
+  <script src='script.js'></script>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel='stylesheet' href='stylesheet.css'>
+  <link rel="stylesheet" href="mobilecss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<header id="header">
+  <div class='bg-header'>
+    <img src='img/idaf%20prwr%20wgcwzwm%20top%20navbar%202.png' alt='A cool navbar background is meant to be here...'>
+  </div>
+  <div class="start-btn-container">
+
+    <a href="index.html">
+      <button id="startBtn">
+        <span id="background-image-st-bt"></span>
+        <span id="st-bt-text">Home</span>
+      </button>
+    </a>
+  </div>
+  <div class="img-container">
+    <!-- PC stimulation navbar -->
+    <img src="./img/black%20dragon%20nav%20bar%203%20wh%20squished.png" height="100" width="auto" alt="dragon photo" id="dragon">
+    <div class="extra-space">
+    </div>
+    <div class="navBtn-container">
+      <div class="dropdown">
+        <button id="settingsBtn" class="navButtons"> <img class='settings-cog' src='img/cog%20wh.png' height='30' width='30'> settings <i class="arrowNavbar down"></i></button>
+        <div class="dropdown-content dropdown-lightTheme">
+          <div id="joe" class="dropdown-theme">
+            <a><i class="arrowDropdown arrowColorLight left"></i> Language</a>
+            <div class="dropdown-content-theme dropdown-lightTheme">
+              <a href="./quizen.html">English</a>
+              <a href="./quiz.html">Deutsch</a>
+            </div>
+          </div>
+          <div id="mama" class="dropdown-theme">
+            <a><i class="arrowDropdown arrowColorLight left"></i> Theme</a>
+            <div class="dropdown-content-theme dropdown-lightTheme">
+              <a id="themeBtn-light">Light</a>
+              <a id="themeBtn-dark">Dark</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PC stimulation navbar end mommy-->
+    <!-- mobile stimulation navbar-->
+    <div class="hamburgerMenu">
+      <a id="hamburgerBtn"><i class="fa fa-bars"></i></a>
+    </div>
+    <!-- hamburger-menu -->
+
+    <!-- mobile stimulation navbar end h-->
+  </div>
+</header>
+<div class="sticky-navBar">
+  <a href="v-ref/en.html"><div class="pg-nav-but">China before reforms</div></a>
+  <a href='e-ref/en.html'><div class="pg-nav-but">Introduction of reforms</div></a>
+  <a href='n-ref/en.html'><div class="pg-nav-but">Development post introduction</div></a>
+  <a href='heute/en.html'><div class="pg-nav-but">The economic situation today</div></a>
+  <a href="./quizen.html"><div class="pg-nav-but" id="active-page">Quiz</div></a>
+</div>
+<div id="phoneNavbar">
+  <a id="topicBtn">Topic <i class="arrowNavbar down"></i></a>
+  <div>
+    <a href="./v-ref/en.html" class="hidden">\\\China before reforms</a>
+    <a href='./e-ref/en.html' class="hidden">\\\Introduction of reforms</a>
+    <a href='./n-ref/en.html' class="hidden">\\\Development post introduction</a>
+    <a href='./heute/en.html' class="hidden">\\\The economic situation today</a>
+  </div>
+  <a id="settingsBtnHam">Settings <i class="arrowNavbar down"></i></a>
+  <div>
+    <a class="hiddenSet" id="themeSetBtn">\\Theme <i class="arrowNavbar down"></i></a>
+    <div>
+      <a class="hiddenTheme" id="lightThemeBtn">\\\\Light Theme</a>
+      <a class="hiddenTheme" id="darkThemeBtn">\\\\Dark Theme</a>
+    </div>
+    <a class="hiddenSet" id="languageSetBtn">\\Language <i class="arrowNavbar down"></i></a>
+    <div>
+      <a href="./quizen.html" class="hiddenLang">\\\\English</a>
+      <a href="./quiz.html" class="hiddenLang">\\\\German</a>
+    </div>
+  </div>
+  <a href="./quizen.html" id="hidden-phone">Quiz</a>
+</div>
+<main>
+  <div class="hamburgerMenu" id="menuLow">
+    <a id="hamburgerBtnLow"><i class="fa fa-bars"></i></a>
+  </div>
+
+  <div id='quiz'>
+    <form>
+        <p class="fontColorLight quiztext">Before the reforms in China, they had a...</p>
+        <div class='question' data-correct='q1_answer1'>
+          <label for="q1_answer1" class='correct fontColorLight quizquestion'>
+            Planned economy
+            <input type="checkbox" id="q1_answer1" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q1_answer2" class='incorrect fontColorLight quizquestion'>
+            Market economy
+            <input type="checkbox" id="q1_answer2" class='q' style="">
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q1_answer3" class='incorrect fontColorLight quizquestion'>
+            Mixed economy
+            <input type="checkbox" id="q1_answer3" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+        </div>
+
+        <p class="fontColorLight quiztext">Who initiated the "Great Leap Forward" campaign?</p>
+        <div class='question' data-correct='q2_answer3'>
+          <label for="q2_answer1" class='incorrect fontColorLight quizquestion'>
+            Deng Xiaoping
+            <input type="checkbox" id="q2_answer1" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q2_answer2" class='incorrect fontColorLight quizquestion'>
+            Xi Jinping
+            <input type="checkbox" id="q2_answer2" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q2_answer3" class='correct fontColorLight quizquestion'>
+            Mao Zedong
+            <input type="checkbox" id="q2_answer3" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+        </div>
+
+        <p class="fontColorLight quiztext">When did China start liberalizing their economy?</p>
+        <div class='question' data-correct='q3_answer2'>
+          <label for="q3_answer1" class='incorrect fontColorLight quizquestion'>
+            1958
+            <input type="checkbox" id="q3_answer1" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q3_answer2" class='correct fontColorLight quizquestion'>
+            1978
+            <input type="checkbox" id="q3_answer2" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q3_answer3" class='incorrect fontColorLight quizquestion'>
+            1991
+            <input type="checkbox" id="q3_answer3" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+        </div>
+
+        <p class="fontColorLight quiztext">Who initiated the reforms?</p>
+        <div class='question' data-correct='q4_answer2'>
+          <label for="q4_answer1" class='incorrect fontColorLight quizquestion'>
+            Mao Zedong
+            <input type="checkbox" id="q4_answer1" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q4_answer2" class='correct fontColorLight quizquestion'>
+            Deng Xiaoping
+            <input type="checkbox" id="q4_answer2" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q4_answer3" class='incorrect fontColorLight quizquestion'>
+            Foreign politicians
+            <input type="checkbox" id="q4_answer3" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+        </div>
+
+        <p class="fontColorLight quiztext">What reforms were introduced?</p>
+        <div class='question' data-correct='q5_answer1, q5_answer2'>
+          <label for="q5_answer1" class='correct fontColorLight quizquestion'>
+            Market freedom for the population
+            <input type="checkbox" id="q5_answer1" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q5_answer2" class='correct fontColorLight quizquestion'>
+            More control to regional governments
+            <input type="checkbox" id="q5_answer2" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q5_answer3" class='incorrect fontColorLight quizquestion'>
+            More wage freedom
+            <input type="checkbox" id="q5_answer3" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+        </div>
+
+        <p class="fontColorLight quiztext">How were these reforms introduced?</p>
+        <div class='question' data-correct='q6_answer1'>
+          <label for="q6_answer1" class='correct fontColorLight quizquestion'>
+            Gradually
+            <input type="checkbox" id="q6_answer1" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q6_answer2" class='incorrect fontColorLight quizquestion'>
+            Simultaneously
+            <input type="checkbox" id="q6_answer2" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+        </div>
+
+        <p class="fontColorLight quiztext">How did the Tiananmen Massacre affect China's economy?</p>
+        <div class='question' data-correct='q7_answer3'>
+          <label for="q7_answer1" class='incorrect fontColorLight quizquestion'>
+            It had little impact
+            <input type="checkbox" id="q7_answer1" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q7_answer2" class='incorrect fontColorLight quizquestion'>
+            Unemployment within the country
+            <input type="checkbox" id="q7_answer2" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q7_answer3" class='correct fontColorLight quizquestion'>
+            They suffered from sanctions from other countries
+            <input type="checkbox" id="q7_answer3" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+        </div>
+
+        <p class="fontColorLight quiztext">How did China respond to the 2008 crisis?</p>
+        <div class='question' data-correct='q8_answer1, q8_answer3'>
+          <label for="q8_answer1" class='correct fontColorLight quizquestion'>
+            Investments in infrastructure
+            <input type="checkbox" id="q8_answer1" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q8_answer2" class='incorrect fontColorLight quizquestion'>
+            Increase interest rates
+            <input type="checkbox" id="q8_answer2" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q8_answer3" class='correct fontColorLight quizquestion'>
+            Loosen monetary policy
+            <input type="checkbox" id="q8_answer3" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q8_answer4" class='incorrect fontColorLight quizquestion'>
+            Increase export tariffs
+            <input type="checkbox" id="q8_answer4" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+        </div>
+
+        <p class="fontColorLight quiztext">What is China focusing on in the last decade?</p>
+        <div class='question' data-correct='q9_answer2, q9_answer3'>
+          <label for="q9_answer1" class='incorrect fontColorLight quizquestion'>
+            Exports
+            <input type="checkbox" id="q9_answer1" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q9_answer2" class='correct fontColorLight quizquestion'>
+            Slower-growing economic model
+            <input type="checkbox" id="q9_answer2" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q9_answer3" class='correct fontColorLight quizquestion'>
+            Innovation
+            <input type="checkbox" id="q9_answer3" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q9_answer4" class='incorrect fontColorLight quizquestion'>
+            Production
+            <input type="checkbox" id="q9_answer4" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+        </div>
+
+      <p class="fontColorLight quiztext">Why do foreign companies have difficulties working with China?</p>
+      <div class='question' data-correct='q10_answer1, q10_answer3'>
+        <label for="q10_answer1" class='correct fontColorLight quizquestion'>
+          Due to corruption
+          <input type="checkbox" id="q10_answer1" class='q'>
+          <span class="checkmark"></span>
+        </label><br><br>
+
+          <label for="q10_answer2" class='incorrect fontColorLight quizquestion'>
+            Due to the high costs
+            <input type="checkbox" id="q10_answer2" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+
+          <label for="q10_answer3" class='correct fontColorLight quizquestion'>
+            Due to the inconsistent contracts
+            <input type="checkbox" id="q10_answer3" class='q'>
+            <span class="checkmark"></span>
+          </label><br><br>
+        </div>
+
+
+        <div class='buttonContainer'>
+          <button type='submit' id='submitter'>Submit answers</button>
+        </div>
+    </form>
+  </div>
+  <div id='score' class="fontColorLight"> Your Score: </div>
+</main>
+
+<footer id="footer">
+  <div class="footerData">
+    <a href="./disclaimer/en.html" class="footerTitles">DISCLAIMER</a>
+  </div>
+  <div class="footerData">
+    <a href="./source/en.html" class="footerTitles">SOURCE PAGE</a>
+  </div>
+  <div class="footerData">
+    <a href="./data_privacy/en.html" class="footerTitles">DATA PRIVACY</a>
+  </div>
+</footer>
+
+</body>
+</html>
