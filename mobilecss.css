@@ -50,7 +50,7 @@
     }
 
     .imgContent {
-        height: 50vh;
+        height: 70vh;
         width: auto;
     }
 
@@ -98,6 +98,11 @@
     .title {
         font-size: 30px;
     }
+
+    .imgContent {
+        height: 40vh;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -120,11 +125,18 @@
         font-size: 5vw;
     }
     .imgContent {
-        height: 28vh;
+        height: 37vh;
         width: auto;
     }
 
     main {
         min-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .imgContent {
+        height: 30vh;
+        width: auto;
     }
 }
