@@ -223,7 +223,7 @@ function content_loader(){
 
             let top = this.pageYOffset;
             let scrollTop = window.scrollY;
-            console.log(scrollTop)
+            /*console.log(scrollTop)*/
             /*console.log(window.innerWidth)*/
             let layers = document.getElementsByClassName("parallax");
             let layer, speed, yPos;
@@ -304,7 +304,7 @@ function content_loader(){
         if (document.querySelectorAll(".imgse")) {
             document.querySelectorAll(".imgse").forEach((i) => {
                 i.style.display = "none";
-                console.log("bru")
+                /*console.log("bru")*/
             })
         }
         if (document.querySelector(".flexSegment")) {
@@ -457,7 +457,7 @@ function content_loader(){
             end_show3 = 2680;
             start_show4 = 627
             end_show4 = 776
-            console.log("2 is true")
+            /*console.log("2 is true")*/
         } else if ((window.innerWidth <= 850) && (window.innerHeight <= 390)) { // sideways iphone 12 pro
             start_show1 = 800
             end_show1 = 1150
@@ -467,7 +467,7 @@ function content_loader(){
             end_show3 = 2680;
             start_show4 = 800
             end_show4 = 1450
-            console.log("1 is true")
+            /*console.log("1 is true")*/
         } else if ((window.innerWidth <= 800) && (window.innerHeight <= 340)) {
             start_show1 = 0
             end_show1 = -1
@@ -503,12 +503,12 @@ function content_loader(){
     let isMouseOverSet = false;
     let sBtn = document.getElementById("settingsBtn");
     let dBu = document.getElementById("joe");
-    console.log(dBu)
+    /*console.log(dBu)*/
     let dBd = document.getElementById("mama");
-    console.log(dBd)
+    /*console.log(dBd)*/
 
     dBu.addEventListener('mouseover', function() {
-        console.log("JOOOO")
+        /*console.log("JOOOO")*/
         let anchor = dBu.querySelector("a");
         let lefts = anchor.querySelectorAll(".left");
         isMouseOverJoe = true;
@@ -518,7 +518,7 @@ function content_loader(){
     });
 
     dBd.addEventListener('mouseover', function() {
-        console.log("JOOOO")
+        /*console.log("JOOOO")*/
         let anchor = dBd.querySelector("a");
         let lefts = anchor.querySelectorAll(".left");
         isMouseOverMama = true;
