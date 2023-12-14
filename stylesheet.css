@@ -432,7 +432,7 @@ main {
 }
 
 .indexContent {
-    margin: 40px 0 10vw 0;
+    margin: 40px 0 10px 0;
 }
 
 
@@ -621,7 +621,7 @@ main {
 
 
 .prevNextBtnContainer {
-    display: none;
+    display: flex;
     justify-content: space-between;
     margin: 20px 0 0 0;
 }
