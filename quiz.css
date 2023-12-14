@@ -13,15 +13,30 @@
     src: url("./fonts/Fontquan-XinYiJiXiangSong Regular.ttf");
 }
 
+@font-face {
+    font-family: quick;
+    src: url("./fonts/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: quickr;
+    src: url("./fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+    font-family: quickl;
+    src: url("./fonts/Quicksand-Light.ttf");
+}
+
 .invalid {
     background-color: #a10f0f;
-    border-radius: 16px;
+    border-radius: 4vw;
     padding: 0 20px;
 }
 
 .valid {
     background-color: #278f27;
-    border-radius: 16px;
+    border-radius: 4vw;
     padding: 0 20px;
 }
 .question {
@@ -29,6 +44,7 @@
     justify-content: center;
     align-content: center;
     flex-flow: column wrap;
+    font-family: quickr, sans-serif;
 }
 
 p {
@@ -85,10 +101,16 @@ label input[type="checkbox"]:checked + .checkmark {
 
 #submitter {
     border: 0;
-    border-radius: 16px;
+    border-radius: 4vw;
     font-family: go3v2, sans-serif;
+    text-align: center;
     color: white;
     background-color: #6C0E23;
+    width: 10vw;
+    min-width: 200px;
+    height: 3vw;
+    min-height: 60px;
+    font-size: max(20px, min(1vw, 100%));
 }
 
 .buttonContainer {
