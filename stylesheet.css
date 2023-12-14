@@ -660,6 +660,11 @@ main {
     margin-right: 10px;
 }
 
+.quiztoptext {
+    margin: 100px 20px 0 20px;
+    text-align: center;
+}
+
 .introImg {
     width: 15vw;
     margin: 30px;
