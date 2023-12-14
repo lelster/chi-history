@@ -586,6 +586,13 @@ main {
     font-size: 30px;
 }
 
+.description-font {
+    font-family: serif;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+
 .textContainer {
     text-align: justify;
     display: flex;
