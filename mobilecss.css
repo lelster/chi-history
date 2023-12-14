@@ -49,14 +49,14 @@
         flex-direction: column;
     }
 
-    .imgContent {
-        height: 70vh;
-        width: auto;
-    }
 
     .imgContentContainer {
         align-items: center;
         margin: 20px 0 0 0;
+    }
+
+    .imgContent {
+        width: 90vw;
     }
 
     .content {
@@ -98,11 +98,6 @@
     .title {
         font-size: 30px;
     }
-
-    .imgContent {
-        height: 40vh;
-        width: auto;
-    }
 }
 
 @media screen and (max-width: 750px) {
@@ -124,19 +119,8 @@
     .text-font {
         font-size: 5vw;
     }
-    .imgContent {
-        height: 37vh;
-        width: auto;
-    }
 
     main {
         min-height: 70vh;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .imgContent {
-        height: 30vh;
-        width: auto;
     }
 }
