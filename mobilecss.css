@@ -49,14 +49,14 @@
         flex-direction: column;
     }
 
-    .imgContent {
-        height: 50vh;
-        width: auto;
-    }
 
     .imgContentContainer {
         align-items: center;
         margin: 20px 0 0 0;
+    }
+
+    .imgContent {
+        width: 90vw;
     }
 
     .content {
@@ -118,10 +118,6 @@
     }
     .text-font {
         font-size: 5vw;
-    }
-    .imgContent {
-        height: 28vh;
-        width: auto;
     }
 
     main {
