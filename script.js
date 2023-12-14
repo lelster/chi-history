@@ -185,11 +185,9 @@ function content_loader(){
             hamburgerBtn.style.opacity = "100";
             hamburgerBtn.style.pointerEvents = "All";
         } else {
-            hamburgerBtn.style.opacity = "0"; // Adjust as needed
+            hamburgerBtn.style.opacity = "0";
             hamburgerBtn.style.pointerEvents = "None";
         }}
-
-
 
     function castParallax() {
 
@@ -254,6 +252,21 @@ function content_loader(){
     }
 
     window.addEventListener("touchmove", function() {
+        let scrollTop = window.scrollY;
+        checkScroll(scrollTop)
+    })
+
+    window.addEventListener("touchstart", function() {
+        let scrollTop = window.scrollY;
+        checkScroll(scrollTop)
+    })
+
+    window.addEventListener("touchend", function() {
+        let scrollTop = window.scrollY;
+        checkScroll(scrollTop)
+    })
+
+    window.addEventListener("touchcancel", function() {
         let scrollTop = window.scrollY;
         checkScroll(scrollTop)
     })
