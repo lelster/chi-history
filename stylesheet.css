@@ -624,6 +624,9 @@ main {
     display: flex;
     justify-content: space-between;
     margin: 20px 0 0 0;
+    padding: 8px;
+    border-radius: 16px;
+    background-color: rgba(129, 29, 44, 0.5);
 }
 
 .prevNextBtnContainer a {

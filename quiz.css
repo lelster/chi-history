@@ -111,6 +111,7 @@ label input[type="checkbox"]:checked + .checkmark {
     height: 3vw;
     min-height: 60px;
     font-size: max(20px, min(1vw, 100%));
+    cursor: pointer;
 }
 
 .buttonContainer {
