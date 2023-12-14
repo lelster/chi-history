@@ -13,6 +13,21 @@
     src: url("./fonts/Fontquan-XinYiJiXiangSong Regular.ttf");
 }
 
+@font-face {
+    font-family: quick;
+    src: url("./fonts/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: quickr;
+    src: url("./fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+    font-family: quickl;
+    src: url("./fonts/Quicksand-Light.ttf");
+}
+
 .invalid {
     background-color: #a10f0f;
     border-radius: 4vw;
@@ -29,6 +44,7 @@
     justify-content: center;
     align-content: center;
     flex-flow: column wrap;
+    font-family: quickr, sans-serif;
 }
 
 p {
