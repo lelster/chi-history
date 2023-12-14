@@ -17,7 +17,10 @@ function gay(event) {
     const questions = document.querySelectorAll(".question");
     const label = document.querySelectorAll('label');
     const submitButton = document.getElementById('submitter');
-
+    submitButton.style.backgroundColor = "#491724";
+    document.querySelectorAll("label").forEach((x) => {
+        x.style.color = "#FFF";
+    });
 
     questions.forEach(question => {
         const correctAnswers = question.dataset.correct.split(',');
@@ -48,7 +51,6 @@ function gay(event) {
         checkbox.disabled = true;
     });
     submitButton.disabled = true;
-
     scorediv.innerHTML += `${score}/${totalCorrectAnswers}`;
 }
 

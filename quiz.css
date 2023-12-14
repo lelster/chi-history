@@ -3,14 +3,24 @@
     src: url("./fonts/go3v2.ttf");
 }
 
+@font-face {
+    font-family: hanyi;
+    src: url("./fonts/HanyiSentyPagoda Regular.ttf");
+}
+
+@font-face {
+    font-family: fontquan;
+    src: url("./fonts/Fontquan-XinYiJiXiangSong Regular.ttf");
+}
+
 .invalid {
-    background-color: red;
+    background-color: #a10f0f;
     border-radius: 16px;
     padding: 0 20px;
 }
 
 .valid {
-    background-color: green;
+    background-color: #278f27;
     border-radius: 16px;
     padding: 0 20px;
 }
@@ -76,9 +86,17 @@ label input[type="checkbox"]:checked + .checkmark {
 #submitter {
     border: 0;
     border-radius: 16px;
+    font-family: go3v2, sans-serif;
+    color: white;
+    background-color: #6C0E23;
 }
 
 .buttonContainer {
     display: flex;
     justify-content: center;
+}
+
+#quiz {
+    margin: 20px;
+    text-align: center;
 }
