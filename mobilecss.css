@@ -66,6 +66,14 @@
     .prevNextBtnContainer {
         margin: 20px 0 0 0;
     }
+
+    .boxModalText {
+        font-size: 30px;
+    }
+
+    .boxModal {
+        min-width: 25vw;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -101,6 +109,18 @@
 
     .title {
         font-size: 30px;
+    }
+
+    .boxModalText {
+        font-size: 25px;
+    }
+
+    .boxModal {
+        min-width: 40vw;
+    }
+
+    .introImg {
+        width: 30vw;
     }
 }
 
