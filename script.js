@@ -27,6 +27,12 @@ function content_loader(){
             }
         }
     }
+    function autoHam() {
+        let newHeight = window.scrollY;
+        checkScroll(newHeight)
+    }
+    const interval = 500;
+    setInterval(autoHam, interval);
     document.getElementById("themeBtn-light").addEventListener("click", changeThemeLight);
     document.getElementById("themeBtn-dark").addEventListener("click", changeThemeDark);
     document.getElementById("lightThemeBtn").addEventListener("click", changeThemeLight);
