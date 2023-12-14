@@ -573,12 +573,18 @@ main {
 }
 
 .side {
-    width: 75vw;
-    margin: 0 0 0 10px;
+    margin: 0;
 }
 
 .intro-chi {
     width: 200px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.imgContent {
+    border-radius: 20px;
+    width: 30vw;
 }
 
 .text-font {
@@ -609,10 +615,6 @@ main {
     margin: 0 0 0 30px;
 }
 
-.imgContent {
-    border-radius: 20px;
-    width: 30vw;
-}
 
 /*footer-------------------------*/
 footer {
